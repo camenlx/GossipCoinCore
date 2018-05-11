@@ -1,0 +1,26 @@
+[Unit]
+Description=Gossipcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=gossipcoin
+Group=gossipcoin
+
+Type=forking
+PIDFile=/var/lib/gossipcoind/gossipcoind.pid
+
+ExecStart=/usr/bin/gossipcoind -daemon -pid=/var/lib/gossipcoind/gossipcoind.pid \
+          -conf=/etc/gossipcoin/gossipcoin.conf -datadir=/var/lib/gossipcoind
+
+ExecStop=-/usr/bin/gossipcoin-cli -conf=/etc/gossipcoin/gossipcoin.conf \
+         -datadir=/var/lib/gossipcoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

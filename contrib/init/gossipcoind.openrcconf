@@ -1,0 +1,26 @@
+# /etc/conf.d/gossipcoind: config file for /etc/init.d/gossipcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/gossipcoin/gossipcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/gossipcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/gossipcoind.pid"
+
+# Where to write gossipcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/gossipcoind"
+
+# User and group to own gossipcoind process
+#BITCOIND_USER="gossipcoin"
+#BITCOIND_GROUP="gossipcoin"
+
+# Path to gossipcoind executable
+#BITCOIND_BIN="/usr/bin/gossipcoind"
+
+# Nice value to run gossipcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

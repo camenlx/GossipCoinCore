@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/gossipcoin_bg.qm</file>
+        <file alias="ca">locale/gossipcoin_ca.qm</file>
+        <file alias="cs">locale/gossipcoin_cs.qm</file>
+        <file alias="da">locale/gossipcoin_da.qm</file>
+        <file alias="de">locale/gossipcoin_de.qm</file>
+        <file alias="en">locale/gossipcoin_en.qm</file>
+        <file alias="en_US">locale/gossipcoin_en_US.qm</file>
+        <file alias="es">locale/gossipcoin_es.qm</file>
+        <file alias="fi">locale/gossipcoin_fi.qm</file>
+        <file alias="fr_FR">locale/gossipcoin_fr_FR.qm</file>
+        <file alias="hr">locale/gossipcoin_hr.qm</file>
+        <file alias="it">locale/gossipcoin_it.qm</file>
+        <file alias="ja">locale/gossipcoin_ja.qm</file>
+        <file alias="ko_KR">locale/gossipcoin_ko_KR.qm</file>
+        <file alias="nl">locale/gossipcoin_nl.qm</file>
+        <file alias="pl">locale/gossipcoin_pl.qm</file>
+        <file alias="pt">locale/gossipcoin_pt.qm</file>
+        <file alias="pt_BR">locale/gossipcoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/gossipcoin_ro_RO.qm</file>
+        <file alias="ru">locale/gossipcoin_ru.qm</file>
+        <file alias="sk">locale/gossipcoin_sk.qm</file>
+        <file alias="sv">locale/gossipcoin_sv.qm</file>
+        <file alias="tr">locale/gossipcoin_tr.qm</file>
+        <file alias="uk">locale/gossipcoin_uk.qm</file>
+        <file alias="zh_CN">locale/gossipcoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/gossipcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

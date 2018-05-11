@@ -1,0 +1,2 @@
+usr/local/bin/gossipcoind usr/bin
+usr/local/bin/gossipcoin-cli usr/bin
