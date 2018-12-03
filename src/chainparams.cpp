@@ -106,16 +106,16 @@ public:
         pchMessageStart[3] = 0x39;
         vAlertPubKey = ParseHex("0317dc37cb1011c0a162fc113358cdad2a12b85a0f841c4c48346bd85f45ec5c1d");
         nDefaultPort = 22123;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Gossipcoin starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 90; // Gossipcoin: 1.5 minutes
-        nTargetSpacingSlowLaunch = 10 * 60;  // Gossipcoin: 10 minutes (Slow launch - Block 288)
-        nTargetSpacing = 1 * 60;  // Gossipcoin: 60 Seconds
+        nTargetTimespan = 1 * 90; // 1.5 minutes
+        nTargetSpacingSlowLaunch = 10 * 60;  // 10 minutes (Slow launch - Block 288)
+        nTargetSpacing = 1 * 60;  // 60 Seconds
         nMaturity = 59;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 2000000000 * COIN;
@@ -160,18 +160,18 @@ public:
         assert(hashGenesisBlock == uint256("0x000003c1687f7f9685cffe243a7d08bf183cfb75fd748103994d62c6a7a75b2a"));
         assert(genesis.hashMerkleRoot == uint256("0x8867e54515f7e9e87b5bd6bbc06c7c69d29a46517b2d634561a963fd3e48e159"));
 
-    	 vSeeds.push_back(CDNSSeedData("seed1.gossipcoin.net", "seed1.gossipcoin.net"));             // seed 1
-         vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed2.gossipcoin.net"));             // seed 2
-		 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed3.gossipcoin.net"));             // seed 3
-		 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed4.gossipcoin.net"));             // seed 4
-         vSeeds.push_back(CDNSSeedData("chain.gossipcoin.net", "chain.gossipcoin.net"));             // explorer
+    	 vSeeds.push_back(CDNSSeedData("seed1.gossipcoin.net", "seed1.gossipcoin.net")); // seed 1
+         vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed2.gossipcoin.net")); // seed 2
+	 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed3.gossipcoin.net")); // seed 3
+	 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed4.gossipcoin.net")); // seed 4
+         vSeeds.push_back(CDNSSeedData("chain.gossipcoin.net", "chain.gossipcoin.net")); // explorer
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38); // G
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 138); // x
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 98); // g
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x73).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
-        // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 1135
+        //BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 1135
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x04)(0x6f).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
@@ -187,20 +187,19 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        //strSporkKey = "0459eede7626441f7802af2736cb3a4aeb3e1f95070cde39d068a4f16525ee8fdd3c075f29f9e115aeb91952239194aa6ac19765574fed8a0d7f174f2b450e9630";
-		    strSporkKey = "03440f6ca649bd3bc2303d38cacdca2d7301bb73ee705e245aab4bb20dbc6a0cdb";
+        strSporkKey = "03440f6ca649bd3bc2303d38cacdca2d7301bb73ee705e245aab4bb20dbc6a0cdb";
         strObfuscationPoolDummyAddress = "GfLRuhBWpz8N2Hp4t6zEmSKYEqL2dpmsqu";
         nStartMasternodePayments = 1525981707 + 6000; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "0xc95577b6dce0049b0a20c779af38079355abadde1a1d80c353f6cb697a7ae5a087bad39caa5798478551d0f9d91e6267716506f32412de1d19d17588765eb9502b85c6a18abdb05791cfd8b734e960281193705eeece210920cc922b3af3ceb178bf12c22eb565d5767fbf19545639be8953c2c38ffad41f3371e4aac750ac2d7bd614b3faabb453081d5d88fdbb803657a980bc93707e4b14233a2358c97763bf28f7c933206071477e8b371f229bc9ce7d6ef0ed7163aa5dfe13bc15f7816348b328fa2c1e69d5c88f7b94cee7829d56d1842d77d7bb8692e9fc7b7db059836500de8d57eb43c345feb58671503b932829112941367996b03871300f25efb5";
-        nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
+        nMaxZerocoinSpendsPerTransaction = 7; //Assume about 20kb each
         nMinZerocoinMintFee = 1 * ZCENT; //high fee required for zerocoin mints
-        nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
+        nMintRequiredConfirmations = 20; //maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations = 6; //Number of confirmations for the finalization fee
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -230,8 +229,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Gossipcoin: 1 day
-        nTargetSpacing = 1 * 60;  // Gossipcoin: 1 minute
+        nTargetTimespan = 1 * 60; // 1 day
+        nTargetSpacing = 1 * 60;  // 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -248,7 +247,7 @@ public:
         genesis.nTime = 1515616140;
         genesis.nNonce = 79855;
 
-	       hashGenesisBlock = genesis.GetHash();
+	hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
 
         vFixedSeeds.clear();
