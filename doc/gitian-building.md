@@ -279,7 +279,7 @@ Clone the git repositories for gossipcoin and gitian and then checkout the gossi
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/g0ssipcoin/GossipCoinCore/Gossipcoin.git
+git clone https://github.com/g0ssipcoin/GossipCoinCore.git
 cd gossipcoin
 git checkout v${VERSION}
 cd ..
@@ -375,7 +375,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/g0ssipcoin/GossipCoinCore/Gossipcoin.git
+URL=https://github.com/g0ssipcoin/GossipCoinCore.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
 ./bin/gbuild --commit gossipcoin=${COMMIT} --url gossipcoin=${URL} ../Gossipcoin/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit gossipcoin=${COMMIT} --url gossipcoin=${URL} ../Gossipcoin/contrib/gitian-descriptors/gitian-win.yml

@@ -26,7 +26,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/g0ssipcoin/GossipCoinCore/gitian.sigs.git
     git clone https://github.com/g0ssipcoin/GossipCoinCore/gossipcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/g0ssipcoin/GossipCoinCore/gossipcoin.git
+    git clone https://github.com/g0ssipcoin/GossipCoinCore.git
 
 ### Gossipcoin maintainers/release engineers, suggestion for writing release notes
 
