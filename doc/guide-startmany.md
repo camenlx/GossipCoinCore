@@ -4,7 +4,7 @@
 There are many ways to setup a wallet to support start-many. This guide will walk through two of them.
 
 1. [Importing an existing wallet (recommended if you are consolidating wallets).](#option1)
-2. [Sending 10,000 Gossipcoin to new wallet addresses.](#option2)
+2. [Sending 10,000 GOSSIP Coins to new wallet addresses.](#option2)
 
 ## <a name="option1"></a>Option 1. Importing an existing wallet
 
@@ -58,7 +58,7 @@ Close your QT Wallet.
 
 ### Send 10,000 Gossipcoin to New Addresses
 
-Just like setting up a standard MN. Send exactly 10,000 Gossipcoin to each new address created above.
+Just like setting up a standard MN. Send exactly 10,000 GOSSIP Coin to each new address created above.
 
 ### Create New Masternode Private Keys
 
@@ -95,7 +95,6 @@ Issue the following:
 Make note of the hash (which is your collaterla_output) and index.
 
 ### Enter your MasterNode details into your masternode.conf file
-[From the Gossipcoin github repo](https://github.com/eastcoastcrypto/Gossipcoin/blob/master/doc/masternode_conf.md)
 
 The new masternode.conf format consists of a space seperated text file. Each line consisting of an alias, IP address followed by port, masternode private key, collateral output transaction id and collateral output index, donation address and donation percentage (the latter two are optional and should be in format "address:percentage").
 
@@ -103,13 +102,11 @@ The new masternode.conf format consists of a space seperated text file. Each lin
 alias ipaddress:port masternode_private_key collateral_output collateral_output_index donationin_address:donation_percentage
 ```
 
-
-
 Example:
 
 ```
 mn01 127.0.0.1:22123 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0
-mn02 127.0.0.2:22123 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh:25
+mn02 127.0.0.2:22123 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0
 ```
 
 ## What about the gossipcoin.conf file?
@@ -137,7 +134,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```gossipcoind getinfo```
 
-And compare with the official explorer at http://gossipcoincoin.com
+And compare with the official explorer at http://chain.gossipcoin.net
 
 ### Local
 

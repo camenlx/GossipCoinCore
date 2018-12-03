@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "Gossipcoin Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Gossipcoin Core Developers</translation>
+        <source>Copyright (C) 2018-%i The GOSSIP Core Developers</source>
+        <translation>Copyright (C) 2018-%i The GOSSIP Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

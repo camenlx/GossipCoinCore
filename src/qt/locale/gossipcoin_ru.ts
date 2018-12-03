@@ -3239,7 +3239,7 @@ https://www.transifex.com/gossipcoin-project/gossipcoin-project-translations</tr
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
+        <source>Copyright (C) 2018-%i The GOSSIP Core Developers</source>
         <translation>Copyright (C) 2015-%i Разработчики Gossipcoin Core</translation>
     </message>
     <message>

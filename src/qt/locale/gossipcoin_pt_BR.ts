@@ -3554,7 +3554,7 @@ https://www.transifex.com/gossipcoin-project/gossipcoin-project-translations</tr
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
+        <source>Copyright (C) 2018-%i The GOSSIP Core Developers</source>
         <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Gossipcoin Core</translation>
     </message>
     <message>

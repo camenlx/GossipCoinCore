@@ -6186,7 +6186,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Gossipcoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
+        <source>Copyright (C) 2018-%i The GOSSIP Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

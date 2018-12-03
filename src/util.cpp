@@ -237,7 +237,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "gossipcoin" is a composite category enabling all Gossipcoin-related debug output
+            // "GOSSIP" is a composite category enabling all GOSSIP-related debug output
             if (ptrCategory->count(string("gossipcoin"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));

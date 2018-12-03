@@ -141,7 +141,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Gossipcoin new blockchain is here";
+        const char* pszTimestamp = "GOSSIP new blockchain is here";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -160,8 +160,10 @@ public:
         assert(hashGenesisBlock == uint256("0x000003c1687f7f9685cffe243a7d08bf183cfb75fd748103994d62c6a7a75b2a"));
         assert(genesis.hashMerkleRoot == uint256("0x8867e54515f7e9e87b5bd6bbc06c7c69d29a46517b2d634561a963fd3e48e159"));
 
-    		 vSeeds.push_back(CDNSSeedData("seed1.gossipcoin.net", "seed1.gossipcoin.net"));             // seed 1
-         vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed2.gossipcoin.net"));             // seed2
+    	 vSeeds.push_back(CDNSSeedData("seed1.gossipcoin.net", "seed1.gossipcoin.net"));             // seed 1
+         vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed2.gossipcoin.net"));             // seed 2
+		 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed3.gossipcoin.net"));             // seed 3
+		 vSeeds.push_back(CDNSSeedData("seed2.gossipcoin.net", "seed4.gossipcoin.net"));             // seed 4
          vSeeds.push_back(CDNSSeedData("chain.gossipcoin.net", "chain.gossipcoin.net"));             // explorer
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38); // G
@@ -256,8 +258,8 @@ public:
         // vSeeds.push_back(CDNSSeedData("45.77.176.204", "45.76.226.204"));       // Single node address
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet gossipcoin addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet gossipcoin script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet GOSSIP addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet GOSSIP script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet gossipcoin BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();

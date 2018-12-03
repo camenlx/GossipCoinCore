@@ -18,7 +18,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-Gossipcoin-Project/Gossipcoin repository.
+GOSS-Project/GOSSIP Coin repository.
 
 What it does:
 * Fetch master and the pull request.

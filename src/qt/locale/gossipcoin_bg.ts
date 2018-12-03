@@ -1974,12 +1974,12 @@ https://www.transifex.com/gossipcoin-project/gossipcoin-project-translations</tr
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start gossipcoin: click-to-pay handler</source>
+        <source>Cannot start GOSSIP coin: click-to-pay handler</source>
         <translation>Провал при стартирането на gossipcoin: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Gossipcoin address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Gossipcoin адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid GOSSIP coin address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден GOSSIP coin адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Gossipcoin Core developers</source>
-        <translation>Gossipcoin Core разработчици</translation>
+        <source>The GOSSIP Core developers</source>
+        <translation>GOSSIP Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>

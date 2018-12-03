@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.gossipcoin.org
-Vcs-Git: git://github.com/gossipcoinproject/Gossipcoin.git
-Vcs-Browser: http://github.com/gossipcoinproject/Gossipcoin
+Homepage: https://gossipcoin.net
+Vcs-Git: git://github.com/g0ssipcoin/GossipCoinCore.git
+Vcs-Browser: http://github.com/g0ssipcoin/GossipCoinCore
 
 Package: gossipcoind
 Architecture: any

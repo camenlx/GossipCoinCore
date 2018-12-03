@@ -3185,8 +3185,8 @@ https://www.transifex.com/gossipcoin-project/gossipcoin-project-translations</tr
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Gossipcoin Core developers</source>
-        <translation>Gossipcoin "core" udviklerne</translation>
+        <source>The GOSSIP Core developers</source>
+        <translation>GOSSIP udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4155,8 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Gossipcoin ALARM!" e-mail@administ
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Gossipcoin Core Developers</translation>
+        <source>The GOSSIP Core Developers</source>
+        <translation>GOSSIP Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
