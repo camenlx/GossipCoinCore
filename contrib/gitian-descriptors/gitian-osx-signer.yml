@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/g0ssipcoin/GossipCoinCore-detached-sigs.git"
+- "url": "https://github.com/gossipcoinproject/gossipcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "gossipcoin-osx-unsigned.tar.gz"

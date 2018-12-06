@@ -18,9 +18,9 @@ packages:
 - "binutils-gold"
 - "ca-certificates"
 - "python"
-reference_datetime: "2018-06-01 00:00:00"
+reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/g0ssipcoin/GossipCoinCore"
+- "url": "https://github.com/eastcoastcrypto/Gossipcoin"
   "dir": "gossipcoin"
 files:
 - "raspberrypi-tools.tar.gz"

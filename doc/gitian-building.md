@@ -1,7 +1,7 @@
 Gitian building
 ================
 
-*Setup instructions for a gitian build of GOSSIP using a Debian VM or physical system.*
+*Setup instructions for a gitian build of Gossipcoin using a Debian VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the Gossipcoin
 Core executables. It provides a way to be reasonably sure that the
@@ -10,6 +10,8 @@ the same, tested dependencies are used and statically built into the executable.
 
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
+These results are compared and only if they match, the build is accepted and uploaded
+to gossipcoin-crypto.com.
 
 More independent gitian builders are needed, which is why I wrote this
 guide. It is preferred to follow these steps yourself instead of using someone else's
@@ -279,7 +281,7 @@ Clone the git repositories for gossipcoin and gitian and then checkout the gossi
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/g0ssipcoin/GossipCoinCore.git
+git clone https://github.com/eastcoastcrypto/Gossipcoin.git
 cd gossipcoin
 git checkout v${VERSION}
 cd ..
@@ -324,11 +326,11 @@ under 'Fetch and build inputs' to install sources which require manual intervent
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for gitian to work offline.
 
-Building GOSSIP
+Building Gossipcoin
 ----------------
 
-To build GOSSIP (for Linux, OSX and Windows) just follow the steps under 'perform
-gitian builds' in [doc/release-process.md](release-process.md) in the GOSSIP repository.
+To build Gossipcoin (for Linux, OSX and Windows) just follow the steps under 'perform
+gitian builds' in [doc/release-process.md](release-process.md) in the gossipcoin repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -375,7 +377,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/g0ssipcoin/GossipCoinCore.git
+URL=https://github.com/eastcoastcrypto/Gossipcoin.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
 ./bin/gbuild --commit gossipcoin=${COMMIT} --url gossipcoin=${URL} ../Gossipcoin/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit gossipcoin=${COMMIT} --url gossipcoin=${URL} ../Gossipcoin/contrib/gitian-descriptors/gitian-win.yml

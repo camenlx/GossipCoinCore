@@ -1,7 +1,7 @@
-TOR SUPPORT IN GOSSIP
+TOR SUPPORT IN Gossipcoin
 =======================
 
-It is possible to run GOSSIP as a Tor hidden service, and connect to such services.
+It is possible to run Gossipcoin as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,7 +10,7 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run GOSSIP behind a Tor proxy
+Run Gossipcoin behind a Tor proxy
 ----------------------------------
 
 The first step is running Gossipcoin behind a Tor proxy. This will already make all
@@ -110,7 +110,7 @@ for normal IPv4/IPv6 communication, use:
 ./gossipcoind -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -discover
 ```
 
-List of known GOSSIP Tor relays
+List of known Gossipcoin Tor relays
 ------------------------------------
 ```
 onion:

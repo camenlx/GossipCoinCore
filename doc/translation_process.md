@@ -1,14 +1,14 @@
 Translations
 ============
 
-The GOSSIP Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, GOSSIP Core makes use of the Transifex online translation management tool.
+The Gossipcoin Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, Gossipcoin Core makes use of the Transifex online translation management tool.
 
 ### Helping to translate (using Transifex)
 Transifex is setup to monitor the GitHub repo for updates, and when code containing new translations is found, Transifex will process any changes. It may take several hours after a pull-request has been merged, to appear in the Transifex web interface.
 
-Multiple language support is critical in assisting GOSSIP coin's global adoption, and growth. One of GOSSIP coin's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
+Multiple language support is critical in assisting Gossipcoin's global adoption, and growth. One of Gossipcoin's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex GOSSIP project](https://www.transifex.com/) to assist in translations.
+See the [Transifex Gossipcoin project](https://www.transifex.com/) to assist in translations.
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:

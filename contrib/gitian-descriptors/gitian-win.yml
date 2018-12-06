@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/g0ssipcoin/GossipCoinCore"
+- "url": "https://github.com/eastcoastcrypto/Gossipcoin"
   "dir": "gossipcoin"
 files: []
 script: |

@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=GOSSIP
-Comment=GOSSIP Coin P2P Cryptocurrency
-Comment[fr]=GOSSIP Coin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=GOSSIP Coin, eşten eşe kriptografik sanal para birimi
+Name=Gossipcoin
+Comment=Gossipcoin P2P Cryptocurrency
+Comment[fr]=Gossipcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Gossipcoin, eşten eşe kriptografik sanal para birimi
 Exec=gossipcoin-qt %u
 Terminal=false
 Type=Application

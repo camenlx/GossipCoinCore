@@ -3630,8 +3630,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The GOSSIP Core developers</source>
-        <translation>Die GOSSIP Core Entwickler</translation>
+        <source>The Gossipcoin Core developers</source>
+        <translation>Die Gossipcoin Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4639,8 +4639,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Gossipcoin Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The GOSSIP Core Developers</source>
-        <translation>Copyright (C) 2018-%i The GOSSIP Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Gossipcoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Gossipcoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

@@ -1,5 +1,5 @@
 [Unit]
-Description=GOSSIP Coin's distributed currency daemon
+Description=Gossipcoin's distributed currency daemon
 After=network.target
 
 [Service]

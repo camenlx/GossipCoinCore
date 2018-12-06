@@ -23,16 +23,17 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/g0ssipcoin/GossipCoinCore/gitian.sigs.git
-    git clone https://github.com/g0ssipcoin/GossipCoinCore/gossipcoin-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/gitian.sigs.git
+    git clone https://github.com/eastcoastcrypto/gossipcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/g0ssipcoin/GossipCoinCore.git
+    git clone https://github.com/eastcoastcrypto/gossipcoin.git
 
 ### Gossipcoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
     git shortlog --no-merges v(current version, e.g. 0.7.2)..v(new version, e.g. 0.8.0)
+
 
 Generate list of authors:
 
@@ -264,6 +265,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/g0ssipcoin/GossipCoinCore/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Gossipcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

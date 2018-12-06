@@ -1,12 +1,12 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-GOSSIP Core version *version* is now available from:
+Gossipcoin Core version *version* is now available from:
 
-  <https://github.com/g0ssipcoin/GossipCoinCore/releases>
+  <https://github.com/eastcoastcrypto/Gossipcoin/releases>
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/g0ssipcoin/GossipCoinCore/issues>
+  <https://github.com/eastcoastcrypto/Gossipcoinita/issues>
 
 Mandatory Update
 ==============
@@ -44,3 +44,13 @@ Detailed release notes follow. This overview includes changes that affect
 behavior, not code moves, refactors and string updates. For convenience in locating
 the code changes and accompanying discussion, both the pull request and
 git merge commit are mentioned.
+
+
+Credits
+=======
+
+Thanks to everyone who directly contributed to this release:
+- GOAT
+- Jamison
+
+

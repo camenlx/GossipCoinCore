@@ -4045,7 +4045,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are GOSSIP outputs - NOTE that zGOSS outputs are signed later in SoK
+    // Sign if these are gossipcoin outputs - NOTE that zGOSS outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
